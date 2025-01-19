@@ -1,0 +1,106 @@
+/* Scoped styles for the Posts component */
+.posts-container .moreView,
+.posts-container .recommendations {
+  margin: 16px;
+  padding: 16px 16px 32px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.posts-container .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.posts-container .heading span {
+  font-size: 24px;
+  color: #002f34;
+}
+
+.posts-container .heading span:last-child {
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.posts-container .cards {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 16px;
+}
+
+.posts-container .cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.posts-container .cards::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 4px;
+}
+
+.posts-container .card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 220px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.posts-container .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.posts-container .card .favorite {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.posts-container .card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.posts-container .card .image img {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.posts-container .card .content {
+  margin-bottom: 12px;
+}
+
+.posts-container .card .content .rate {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.posts-container .card .content .kilometer {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+}
+
+.posts-container .card .content .name {
+  font-size: 14px;
+  color: #888888;
+}
+
+.posts-container .card .date {
+  font-size: 12px;
+  text-align: right;
+  color: #aaaaaa;
+}

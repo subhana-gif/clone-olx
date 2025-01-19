@@ -1,0 +1,86 @@
+/* Create.css */
+.create-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.create-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.create-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.create-error-message {
+  color: #e74c3c;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.create-image-preview {
+  margin-top: 10px;
+}
+
+.create-preview-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.create-thumbnail-placeholder {
+  font-size: 0.9em;
+  color: #999;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.create-upload-btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.create-upload-btn:hover {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
